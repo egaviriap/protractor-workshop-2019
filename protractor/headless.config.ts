@@ -3,7 +3,7 @@ import { reporter } from './helpers/reporter';
 
 export const config: Config = {
   framework: 'jasmine',
-  specs: [ '../test/google.spec.js' ],
+  specs: ['../test/google.spec.js'],
 
   capabilities: {
     browserName: 'chrome',
@@ -15,7 +15,6 @@ export const config: Config = {
   onPrepare: () => {
     browser.ignoreSynchronization = true;
     reporter();
-}
+  }
 
 };
-

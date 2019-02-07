@@ -12,7 +12,9 @@ export const config: Config = {
       args: ['--headless', '--disable-gpu']
     }
   },
-
+  jasmineNodeOpts: {
+    defaultTimeoutInterval: 120000
+  },
   onPrepare: () => {
     browser.ignoreSynchronization = true;
     reporter();
